@@ -1,0 +1,15 @@
+import requests
+from selenium import webdriver
+ 
+driver = webdriver.Chrome()
+driver.get("http://www.google.com")
+print(driver.title)
+driver.quit()
+
+def getDrivers ():
+
+    req = requests.request('GET', 'https://httpbin.org/get')
+    response = requests.get(api_url)
+    response.json()
+
+    
